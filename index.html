@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Podestá Cande & Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo Podestá" class="logo">
+            <h1>Bienvenidos</h1>
+        </header>
+
+        <section class="menu">
+            <div class="col">
+                <h2>Desayuno con Infusiones</h2>
+                <div class="item"><span>Café con Leche</span> <span>$XXX</span></div>
+                <div class="item"><span>Té Variedad Premium</span> <span>$XXX</span></div>
+                <div class="item"><span>Cappuccino Italiano</span> <span>$XXX</span></div>
+                <div class="item"><span>Submarino</span> <span>$XXX</span></div>
+                <div class="item"><span>Medialunas x2</span> <span>$XXX</span></div>
+                <div class="item"><span>Tostadas c/ Mermelada</span> <span>$XXX</span></div>
+            </div>
+
+            <div class="col">
+                <h2>Comidas</h2>
+                <div class="item"><span>Tostado Jamón y Queso</span> <span>$XXX</span></div>
+                <div class="item"><span>Sándwich Pollo Gourmet</span> <span>$XXX</span></div>
+                <div class="item"><span>Ensalada Caesar</span> <span>$XXX</span></div>
+                <div class="item"><span>Quiche del Día</span> <span>$XXX</span></div>
+                <div class="item"><span>Empanadas Criollas x2</span> <span>$XXX</span></div>
+            </div>
+
+            <div class="col full">
+                <h2>Bebidas</h2>
+                <div class="item"><span>Agua Mineral</span> <span>$XXX</span></div>
+                <div class="item"><span>Gaseosas</span> <span>$XXX</span></div>
+                <div class="item"><span>Cerveza Artesanal</span> <span>$XXX</span></div>
+                <div class="item"><span>Vino por Copa</span> <span>$XXX</span></div>
+            </div>
+        </section>
+
+        <div class="postre-dia">
+            <h2>Postre del Día</h2>
+            <p>Consultar variedad del día. ¡Recetas frescas y deliciosas!</p>
+        </div>
+
+        <div id="qr-container"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qr-container"), {
+            text: window.location.href,
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
